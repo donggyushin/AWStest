@@ -32,7 +32,8 @@
   "scripts": {
     "dev": "nodemon --exec babel-node src/init.js",
     "build": "babel src --out-dir dist",
-    "start": "NODE_ENV=production node ./init.js"
+    "start": "NODE_ENV=production node ./init.js",
+    "prestart": "yarn install"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
